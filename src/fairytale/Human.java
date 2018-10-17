@@ -1,13 +1,12 @@
 package fairytale;
 
 public class Human extends Creature {
-    private Gender gender;
+
     private String name;
     private boolean alive;
 
-    public Human (String name,Gender gender){
+    public Human (String name){
         this.name = name;
-        this.gender = gender;
         this.alive = true;
     }
 
@@ -17,7 +16,7 @@ public class Human extends Creature {
     }
 
     @Override
-    public void killCreature() {
+    public void die() {
         this.alive = false;
     }
 
@@ -34,13 +33,10 @@ public class Human extends Creature {
 
     public void setBunName(String str, Bun bun){
         bun.setName(str);
-
+        System.out.println("Булку назвали " + str);
     }
 
-    public Gender getGender() {
-        return gender;
-    }
-
+    @Override
     public String getName() {
         return name;
     }
