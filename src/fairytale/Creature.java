@@ -2,10 +2,7 @@ package fairytale;
 
 public abstract class Creature implements Living{
 
-
     private boolean alive;
-
-   // public Creature(){}
 
     public boolean isAlive() {return alive;}
 
