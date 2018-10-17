@@ -6,6 +6,8 @@ public abstract class Creature implements Living{
 
     public boolean isAlive() {return alive;}
 
+    public void die() {this.alive = false;}
+
     public void doTalk(Creature living){
         System.out.println(this.getName() + " разговаривает с " + living.getName());
     }

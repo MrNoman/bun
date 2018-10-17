@@ -16,15 +16,7 @@ public class Bun extends Creature {
         return instance;
     }
 
-    @Override
-    public boolean isAlive() {
-        return (alive) ;
-    }
-
-    @Override
-    public void die() {this.alive = false;}
     public void  makeAlive () {this.alive = true;}
-    @Override
     public String getName(){return this.name;}
     public void setName(String str){this.name = str;}
 }

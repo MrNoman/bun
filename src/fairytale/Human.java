@@ -10,16 +10,6 @@ public class Human extends Creature {
         this.alive = true;
     }
 
-    @Override
-    public boolean isAlive() {
-        return alive;
-    }
-
-    @Override
-    public void die() {
-        this.alive = false;
-    }
-
     public void scratchSuseki (){
         Bun bun = Bun.getInstance();
         if (bun.isAlive() == true) {

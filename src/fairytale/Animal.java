@@ -12,22 +12,10 @@ public class Animal extends Creature implements Hunting{
         this.alive = true;
     }
 
-    @Override
-    public boolean isAlive() {
-        return this.alive;
-    }
-
-    @Override
     public String getName() {
         return this.name;
     }
 
-    @Override
-    public void die() {
-        this.alive = false;
-    }
-
-    @Override
     public void killCreature(Living living) {
         living.die();
         System.out.println(this.name + " съел " + living.getName());
