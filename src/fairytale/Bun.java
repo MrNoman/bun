@@ -3,7 +3,6 @@ package fairytale;
 public class Bun extends Creature {
     private volatile static Bun instance;
     private String name;
-    private boolean alive;
 
     private Bun (){}
 
