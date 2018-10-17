@@ -4,9 +4,12 @@ public abstract class Creature implements Living{
 
     private boolean alive;
 
-    public boolean isAlive() {return alive;}
+    private String name;
+    public boolean isAlive() {return this.alive;}
 
     public void die() {this.alive = false;}
+
+    public void  makeAlive () {this.alive = true;}
 
     public void doTalk(Creature living){
         System.out.println(this.getName() + " разговаривает с " + living.getName());

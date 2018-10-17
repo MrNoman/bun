@@ -27,7 +27,5 @@ public class Human extends Creature {
     }
 
     @Override
-    public String getName() {
-        return name;
-    }
+    public String getName() {return this.name;}
 }

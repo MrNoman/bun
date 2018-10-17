@@ -16,7 +16,6 @@ public class Bun extends Creature {
         return instance;
     }
 
-    public void  makeAlive () {this.alive = true;}
     public String getName(){return this.name;}
     public void setName(String str){this.name = str;}
 }
