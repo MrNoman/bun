@@ -1,17 +1,19 @@
 package fairytale;
 
 public class Bun extends Creature {
-    private static Bun instance;
+    private volatile static Bun instance;
     private String name;
     private boolean alive;
 
-    private Bun (){
-        this.alive = false;
-    }
+    private Bun (){}
 
     public static Bun getInstance(){
         if (instance == null) {
-            instance = new Bun();
+            synchronized (Bun.class) {
+                if (instance == null) {
+                    instance = new Bun();
+                }
+            }
         }
         return instance;
     }
